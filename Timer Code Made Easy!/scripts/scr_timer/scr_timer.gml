@@ -20,20 +20,20 @@ if started[entry] = true
 	{
 		if (global.ticks - tick[entry]) >= duration
 		{
-			execute[entry] = true
+			execute[entry] = true;
 			started[entry] = false;
 		}
 		
-		currenttick[entry] = (global.ticks - tick[entry])
+		currenttick[entry] = (global.ticks - tick[entry]);
 	}
 	else
 	{
 		if ((global.ticks - tick[entry])+global.maxticks) >= duration
 		{
-			execute[entry] = true
+			execute[entry] = true;
 			started[entry] = false;
 		}
 		
-		currenttick[entry] = (global.ticks - tick[entry] + global.maxticks)
+		currenttick[entry] = (global.ticks - tick[entry] + global.maxticks);
 	}
 }
